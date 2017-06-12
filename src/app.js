@@ -6,5 +6,9 @@ registerScreens();
 
 // this will start our app
 Navigation.startSingleScreenApp({
-  screen: 'example.DemoScreen'
+  screen: {
+    label: 'Demo',
+    screen: 'example.DemoScreen',
+    title: 'Demo'
+  }
 });
