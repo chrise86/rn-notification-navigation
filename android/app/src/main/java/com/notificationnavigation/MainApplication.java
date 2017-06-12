@@ -38,7 +38,7 @@ public class MainApplication extends NavigationApplication implements INotificat
     }
 
     @Override
-    public IPushNotification getPushNotification(Context context, Bundle bundle, NotificationsLifecycleFacade defaultFacade, AppLaunchHelper defaultAppLaunchHelper) {
+    public IPushNotification getPushNotification(Context context, Bundle bundle, AppLifecycleFacade defaultFacade, AppLaunchHelper defaultAppLaunchHelper) {
         return new AppPushNotification(
         	context,
         	bundle,
